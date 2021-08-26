@@ -5,14 +5,20 @@ const ComponentsDetail = props => {
     return (
         <View>
             <Image source={props.imageSource} />
-            <Text>{props.title}</Text>
-            <Text>Image Score-{props.score}</Text>
+            <Text style={styles.Text}>{props.title}</Text>
+            <Text style={styles.score}>Image Score-{props.score} </Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-
+    Text: {
+        fontSize: 25,
+        fontWeight: "bold"
+    },
+    score: {
+        fontSize: 22
+    }
 })
 
 export default ComponentsDetail;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import ComponentsDetail from '../Component/ComponentsDetail';
 
 const ReusableComponents = () => {
@@ -10,18 +10,18 @@ const ReusableComponents = () => {
                 imageSource={require('../../assets/forest.jpg')}
                 score={9}
             />
+
             <ComponentsDetail
                 title="Beach"
                 imageSource={require('../../assets/beach.jpg')}
-                score={8}
-            />
-            <ComponentsDetail
-                title="Mountain"
-                imageSource={require('../../assets/mountain.jpg')}
                 score={7}
             />
 
-
+            <ComponentsDetail
+                title="Mountain"
+                imageSource={require('../../assets/mountain.jpg')}
+                score={4}
+            />
         </View>
     )
 }
